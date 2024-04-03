@@ -25,6 +25,31 @@ Snowflake stores data in a columnar format, where each column is stored separate
 Micro-partitions it is the data that is loaded or inserted also partitioned into snowflake.
 2.Query Processing Layer
 It consist of Virtual Warehouses that execute the processing tasks required to return results for most SQL statements.
+A Virtual Warehouse is a named abstraction for a cluster of a cloud-based compute instances that snowflake manage.
+Virtual warehouses can be created or removed instantly
+3. Service Layer
+It is a collection of highly available and scalable services that coordinate activities such as authentication and query optimization across all snowflake accounts.
+Services managed by this layer include: 
+1. Authentication & Access Control
+2. Infrastructure Management
+3. Transaction Management
+4. Metadata Management
+5. Query parsing and optimisation and 
+6. Security
+
+KEY FEATURES AND CAPABILITIES OF SNOWFLAKE
+Separation of Compute and storage:Unique architecture that decouples storage and compute resources,allowing independent scaling for each other.
+Automatic Scaling:Snowflake dynamically adjust computing resources to match workload demands,ensuring optimal perfomance without manual intervention.
+Multi-cluster Shared Architecture:Allows multiple compute clusters to access the same data simultaneously,enabling high concurrecy without resource contention
+Data Sharing:Secure and controlled sharing of live data bettween snowflake accounts and organizations
+Zero-Copy Cloning:Provides the ability to create instant,virtual copies of data without physically duplicating it.
+Security and Governance:End-to-end encryption,granular access cont
+
+
+ 
+
+
+
 
 
 
